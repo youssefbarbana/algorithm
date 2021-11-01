@@ -1,0 +1,43 @@
+ALGORITHM algorithm_name
+VAR
+    bla:CHAR;
+    a : STRING;
+    count,vow,i,nb : INTEGER;
+BEGIN
+
+count = 0;
+FOR i FROM 1 to i in range(0, length (a)) DO
+    if(a[i] != ' ')
+        count = count + 1;
+
+ Write ("Total number of characters in a sentence: " + str(count));
+END_FOR ;
+
+
+ 
+ Write "write a sentence" ; 
+ Read bla 
+ nb :=0;
+ FOR i FROM 1 to Len(bla) DO
+ IF Mid (bla,i,1) ="" THEN
+     nb := nb+1 ;
+ END_IF
+ 
+ Write "this sentence have  " , nb+1 ,"words"
+
+END_FOR
+
+
+
+vow = 0;
+
+FOR i FROM 1 to i in range(0, length (a)) DO
+    if(a[i] != ('a','e','o','u','i','y')):
+        vow = vow + 1;
+ Write ("Total number of vowels in a sentence: " + str(vow));
+END_FOR
+
+END
+
+
+
